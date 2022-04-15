@@ -132,15 +132,22 @@ def save_crawbing(isCrawbing,novel_name_id):
 
 def main_zhsxs(novel_id):
     novel_id=int(novel_id)
+    try:
+        NavelInfoInit.main(novel_id);
+    except Exception as e:
+        print(e)
+        logger.debug(str(e))
 
-    NavelInfoInit.main(novel_id);
-
-    # 查看是否在抓取中
-    if(check_crawbing(novel_id)==1):
-        logger.warning(("novel_id %s 抓取中") % (novel_id))
-        return "抓取中"
-    else:
-        save_crawbing(1,novel_id)
+    try:
+        # 查看是否在抓取中
+        if(check_crawbing(novel_id)==1):
+            logger.warning(("novel_id %s 抓取中") % (novel_id))
+            return "抓取中"
+        else:
+            save_crawbing(1,novel_id)
+    except Exception as e:
+        print(e)
+        logger.debug(str(e))
 
 
     # 定義小說id

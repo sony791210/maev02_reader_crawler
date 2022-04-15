@@ -83,6 +83,8 @@ class navelInfo:
 
         novel_name_id = int(novel_name_id)
         text, photoUrl = self.getIntroduction(novel_name_id)
+        print(text)
+        print(photoUrl)
         photoBase64 = self.photoUrl2Base64(photoUrl)
         title, author, cat, long_info, tags = self.splicInfo(text)
         self.gotoDataInfo(title, author, cat, long_info, tags, photoBase64, novel_name_id)

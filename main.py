@@ -42,6 +42,7 @@ logging.config.dictConfig(LoggerConfig.dictConfig)
 
 @app.route("/")
 @app.route("/hello")
+@app.route("/apiflask")
 def hello():
     return "Hello, World!"
 
@@ -49,33 +50,37 @@ def hello():
 
 @app.route('/apiflask/v1/navel/search', methods=['GET'])
 def getNavelSearch():
+    print('okok')
     search = Search();
     try:
         website = request.args.get('website')
         keyword = request.args.get('keyword')
+        print('ok1')
 
         if not(keyword):
             raise ValueError("no keyword")
         elif not(website):
             raise ValueError("no website")
+        print(website)
 
+        result=""
         # 測試宙斯
         if (website=="zhsxs"):
             result = search.zhsxs(keyword)
         elif(website=="sto"):
-
             result = search.sto(keyword)
-        print('QQQ')
         return sucess(result)
     except Exception as e:
         return  fail("9999",e)
 
 
-@app.route('/apiflask/v1/navel/download', methods=['GET'])
+@app.route('/apiflask/v1/navel/download', methods=['POST'])
 def getNavelDownload():
     try:
-        website = request.args.get('website')
-        navelId = request.args.get('navelId')
+
+        data = request.get_json()
+        website =data["website"]
+        navelId =data["navelId"]
 
         if not(navelId):
             raise ValueError("no navelId")
@@ -96,4 +101,4 @@ def getNavelDownload():
         return  fail("9999",e)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")

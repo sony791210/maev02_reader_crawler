@@ -1299,3 +1299,462 @@
 [2022-04-14 15:05:59,348] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:167} WARNING - novel_id 62088 結束抓取
 [2022-04-14 16:52:52,634] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 16:52:52] "GET /apiflask/v1/navel/download?website=zhsxs&navelId=62088 HTTP/1.1" 200 -
 [2022-04-14 16:52:54,594] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:167} WARNING - novel_id 62088 結束抓取
+[2022-04-14 22:27:24,273] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-04-14 22:41:34,265] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-04-14 22:42:21,821] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+[2022-04-14 22:42:25,460] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:25] "GET / HTTP/1.1" 200 -
+[2022-04-14 22:42:25,846] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-04-14 22:42:27,585] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:27] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:42:33,545] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:33] "GET / HTTP/1.1" 200 -
+[2022-04-14 22:42:35,962] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:35] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:42:51,834] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:42:51] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:43:12,024] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:43:12] "GET / HTTP/1.1" 200 -
+[2022-04-14 22:44:37,348] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 22:44:40,447] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 192.168.89.1 - - [14/Apr/2022 22:44:40] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:44:41,058] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 192.168.89.1 - - [14/Apr/2022 22:44:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2022-04-14 22:46:51,077] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 192.168.89.1 - - [14/Apr/2022 22:46:51] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:49:59,234] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 192.168.89.1 - - [14/Apr/2022 22:49:59] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:50:26,984] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:50:26] "GET /apiflask/v1/navel/search HTTP/1.1" 200 -
+[2022-04-14 22:53:53,392] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 192.168.89.1 - - [14/Apr/2022 22:53:53] "GET /apiflask HTTP/1.1" 200 -
+[2022-04-14 22:56:06,771] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:56:06] "GET /apiflask/v1/navel/search HTTP/1.1" 200 -
+[2022-04-14 22:56:35,969] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:56:35] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:56:55,738] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:56:55] "GET /apiflask/v1/navel/search HTTP/1.1" 200 -
+[2022-04-14 22:57:09,510] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:57:09] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:57:54,951] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 22:58:00,254] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:58:00] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:58:07,620] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:58:07] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:58:42,411] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:58:42] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:59:13,164] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 22:59:14,067] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:59:14] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 22:59:27,585] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 22:59:28,872] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 22:59:28] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:00:02,307] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:00:03,110] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:00:03] "GET /apiflask/v1/navel/search?website=zhszs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:02:00,520] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:02:00] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:03:22,978] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:03:26,849] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:03:26] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:04:03,333] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:04:03,612] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:04:03] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:04:39,175] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:04:39] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:06:40,271] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:06:40] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:07:06,657] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:07:06] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:07:08,571] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:07:08] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:07:12,648] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:07:12] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:07:20,758] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:07:20] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:08:12,656] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:08:12] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:08:41,763] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:08:41] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:08:46,149] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:08:46] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:09:02,548] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:09:02] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:09:19,153] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:09:19] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:10:19,329] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:10:19] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:10:39,891] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:10:39] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:10:54,176] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:10:54] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:11:52,456] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:11:52] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:12:21,690] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:12:21] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:13:23,494] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:13:23] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:13:28,660] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:13:28] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:13:39,514] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:13:39] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:13:47,016] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:13:47] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:14:39,960] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:14:39] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:14:44,856] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:14:44] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:15:11,287] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:15:11] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:15:48,168] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:15:48] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:15:58,191] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:15:58] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:16:03,870] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:16:03] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:16:37,946] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:16:37] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:16:43,415] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:16:43] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:16:59,157] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:16:59] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:17:14,813] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:17:14] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:18:46,745] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:20:11,268] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:20:11] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:20:18,421] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:20:18] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:20:54,965] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:20:57,274] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:20:57] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:21:07,108] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:21:10,539] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:21:10] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=星 HTTP/1.1" 200 -
+[2022-04-14 23:21:16,669] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:21:16] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:21:31,381] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:21:33,850] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:21:33] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:24:21,968] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:24:21] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名 HTTP/1.1" 200 -
+[2022-04-14 23:25:26,575] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:25:29,223] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:25:29] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜 HTTP/1.1" 200 -
+[2022-04-14 23:25:57,392] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:25:57] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:29:42,646] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:29:42] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:30:19,513] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:30:19] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:30:23,043] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:30:23] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:30:47,787] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:30:47] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:30:58,649] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:30:58] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:31:56,129] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:31:56] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:32:09,453] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:32:09] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:32:18,452] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:32:18] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:33:16,070] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:33:16] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:33:18,741] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:33:18] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:33:40,064] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:33:40] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的命名術 HTTP/1.1" 200 -
+[2022-04-14 23:36:29,931] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:36:44,680] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:36:44] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜 HTTP/1.1" 200 -
+[2022-04-14 23:36:49,269] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:36:49] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的 HTTP/1.1" 200 -
+[2022-04-14 23:36:51,996] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:36:51] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:36:53,799] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:139} DEBUG - (pymysql.err.DataError) (1406, "Data too long for column 'title_photo_url' at row 1")
+[SQL: INSERT INTO novel_info (title, novel_name_id, comic_name_id, title_photo_url, data_update_time, author, long_info, tags, cat, content_type, crawbing) VALUES (%(title)s, %(novel_name_id)s, %(comic_name_id)s, %(title_photo_url)s, %(data_update_time)s, %(author)s, %(long_info)s, %(tags)s, %(cat)s, %(content_type)s, %(crawbing)s)]
+[parameters: {'title': '夜的命名術', 'novel_name_id': 60200, 'comic_name_id': None, 'title_photo_url': b'/9j/4AAQSkZJRgABAQEBLAEsAAD/7UCoUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAB8cAVoAAxslRxwBWgADGyVHHAFaAAMbJUccAgAAAgAAADhCSU0EJQAAAAAAENPJn0s9jeoohUg1aoQVnCs4 ... (96563 characters truncated) ... /eStY2qy20G0wK0un6ux7EaHuwpczUgECsmVN8MlJzjsRrRO1bAJAzThb6EOVOOS5/wBoOQ0waGyF3zaknIO3pUK44TS25sJrL6EoPH8zqz2gPFqJ9B9KyzhNNiV8BxUVftoK06GkxmpCJr//2Q==', 'data_update_time': datetime.datetime(2022, 4, 14, 23, 36, 53, 726768), 'author': '會說話的肘子', 'long_info': '藍與紫的霓虹中，濃密的鋼鐵蒼穹下，數據洪流的前端，是科技革命之后的世界，也是現實與虛幻的分界。鋼鐵與身體，過去與未來。這里，表世界與里世界并存，面前的一切，像是時間之墻近在眼前。黑暗逐漸籠罩。可你要明白啊我的朋友，我們不能用溫柔去應對黑暗，要用火。                                       ', 'tags': '都市,異術超能,會說話的肘子,夜的命名術', 'cat': '都市', 'content_type': 'text', 'crawbing': None}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2022-04-14 23:36:55,217] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422862 page 0
+[2022-04-14 23:36:58,228] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422863 page 1
+[2022-04-14 23:37:03,640] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422864 page 2
+[2022-04-14 23:37:11,743] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422865 page 3
+[2022-04-14 23:37:17,224] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422866 page 4
+[2022-04-14 23:37:22,581] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20422867 page 5
+[2022-04-14 23:37:24,562] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20426155 page 6
+[2022-04-14 23:37:29,187] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20428064 page 7
+[2022-04-14 23:37:39,969] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20428065 page 8
+[2022-04-14 23:37:47,575] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20433818 page 9
+[2022-04-14 23:37:48,470] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20433819 page 10
+[2022-04-14 23:37:55,154] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO -  * Running on all addresses (0.0.0.0)
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.89.248:5000 (Press CTRL+C to quit)
+[2022-04-14 23:37:56,788] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:37:56] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:37:58,382] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:139} DEBUG - (pymysql.err.DataError) (1406, "Data too long for column 'title_photo_url' at row 1")
+[SQL: INSERT INTO novel_info (title, novel_name_id, comic_name_id, title_photo_url, data_update_time, author, long_info, tags, cat, content_type, crawbing) VALUES (%(title)s, %(novel_name_id)s, %(comic_name_id)s, %(title_photo_url)s, %(data_update_time)s, %(author)s, %(long_info)s, %(tags)s, %(cat)s, %(content_type)s, %(crawbing)s)]
+[parameters: {'title': '夜的命名術', 'novel_name_id': 60200, 'comic_name_id': None, 'title_photo_url': b'/9j/4AAQSkZJRgABAQEBLAEsAAD/7UCoUGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAB8cAVoAAxslRxwBWgADGyVHHAFaAAMbJUccAgAAAgAAADhCSU0EJQAAAAAAENPJn0s9jeoohUg1aoQVnCs4 ... (96563 characters truncated) ... /eStY2qy20G0wK0un6ux7EaHuwpczUgECsmVN8MlJzjsRrRO1bAJAzThb6EOVOOS5/wBoOQ0waGyF3zaknIO3pUK44TS25sJrL6EoPH8zqz2gPFqJ9B9KyzhNNiV8BxUVftoK06GkxmpCJr//2Q==', 'data_update_time': datetime.datetime(2022, 4, 14, 23, 37, 58, 290522), 'author': '會說話的肘子', 'long_info': '藍與紫的霓虹中，濃密的鋼鐵蒼穹下，數據洪流的前端，是科技革命之后的世界，也是現實與虛幻的分界。鋼鐵與身體，過去與未來。這里，表世界與里世界并存，面前的一切，像是時間之墻近在眼前。黑暗逐漸籠罩。可你要明白啊我的朋友，我們不能用溫柔去應對黑暗，要用火。                                       ', 'tags': '都市,異術超能,會說話的肘子,夜的命名術', 'cat': '都市', 'content_type': 'text', 'crawbing': None}]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+[2022-04-14 23:37:59,604] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20433820 page 11
+[2022-04-14 23:38:07,753] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20437301 page 12
+[2022-04-14 23:38:11,581] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20437302 page 13
+[2022-04-14 23:38:16,141] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20437303 page 14
+[2022-04-14 23:38:18,498] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20440468 page 15
+[2022-04-14 23:38:22,748] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20440469 page 16
+[2022-04-14 23:38:27,259] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20440470 page 17
+[2022-04-14 23:38:32,851] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20443909 page 18
+[2022-04-14 23:38:36,282] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20443910 page 19
+[2022-04-14 23:38:43,499] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20443911 page 20
+[2022-04-14 23:38:49,560] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20447283 page 21
+[2022-04-14 23:38:59,046] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20447284 page 22
+[2022-04-14 23:39:03,490] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20447285 page 23
+[2022-04-14 23:39:05,878] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20452727 page 24
+[2022-04-14 23:39:07,154] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:39:07] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=夜的 HTTP/1.1" 200 -
+[2022-04-14 23:39:13,786] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20452728 page 25
+[2022-04-14 23:39:17,179] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20452729 page 26
+[2022-04-14 23:39:27,291] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20458306 page 27
+[2022-04-14 23:39:38,383] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20458307 page 28
+[2022-04-14 23:39:44,344] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20458308 page 29
+[2022-04-14 23:39:52,723] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20461892 page 30
+[2022-04-14 23:40:01,278] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20461907 page 31
+[2022-04-14 23:40:07,735] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20461908 page 32
+[2022-04-14 23:40:14,975] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20473765 page 33
+[2022-04-14 23:40:24,437] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20473766 page 34
+[2022-04-14 23:40:33,006] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20473796 page 35
+[2022-04-14 23:40:36,293] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20473971 page 36
+[2022-04-14 23:40:45,933] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20473972 page 37
+[2022-04-14 23:40:47,938] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20474508 page 38
+[2022-04-14 23:40:57,521] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20481086 page 39
+[2022-04-14 23:40:59,744] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20481087 page 40
+[2022-04-14 23:41:09,134] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20481088 page 41
+[2022-04-14 23:41:14,132] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20490921 page 42
+[2022-04-14 23:41:22,444] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20490922 page 43
+[2022-04-14 23:41:26,938] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20490923 page 44
+[2022-04-14 23:41:27,688] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20492756 page 45
+[2022-04-14 23:41:37,110] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20494073 page 46
+[2022-04-14 23:41:39,641] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20494074 page 47
+[2022-04-14 23:41:46,975] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20494735 page 48
+[2022-04-14 23:41:53,972] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20494736 page 49
+[2022-04-14 23:42:02,088] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20494762 page 50
+[2022-04-14 23:42:11,845] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20500890 page 51
+[2022-04-14 23:42:18,251] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20500891 page 52
+[2022-04-14 23:42:25,590] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20500892 page 53
+[2022-04-14 23:42:27,106] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20502155 page 54
+[2022-04-14 23:42:35,487] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20510567 page 55
+[2022-04-14 23:42:42,413] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20510568 page 56
+[2022-04-14 23:42:49,801] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20510569 page 57
+[2022-04-14 23:42:51,459] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20511152 page 58
+[2022-04-14 23:42:59,995] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20513205 page 59
+[2022-04-14 23:43:01,829] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20513206 page 60
+[2022-04-14 23:43:10,803] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20516926 page 61
+[2022-04-14 23:43:12,761] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20517009 page 62
+[2022-04-14 23:43:21,552] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20527286 page 63
+[2022-04-14 23:43:24,318] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20527287 page 64
+[2022-04-14 23:43:34,467] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20476268 page 65
+[2022-04-14 23:43:37,134] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20527289 page 66
+[2022-04-14 23:43:46,637] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20527305 page 67
+[2022-04-14 23:43:49,795] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20530229 page 68
+[2022-04-14 23:43:53,745] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20530230 page 69
+[2022-04-14 23:44:04,387] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20530231 page 70
+[2022-04-14 23:44:13,868] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20530233 page 71
+[2022-04-14 23:44:22,601] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535181 page 72
+[2022-04-14 23:44:31,823] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535182 page 73
+[2022-04-14 23:44:38,960] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535185 page 74
+[2022-04-14 23:44:46,526] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535186 page 75
+[2022-04-14 23:44:53,209] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20538420 page 76
+[2022-04-14 23:44:58,164] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20538421 page 77
+[2022-04-14 23:45:00,129] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20538422 page 78
+[2022-04-14 23:45:04,180] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20543905 page 79
+[2022-04-14 23:45:08,324] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20543906 page 80
+[2022-04-14 23:45:09,061] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20543928 page 81
+[2022-04-14 23:45:12,763] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20547233 page 82
+[2022-04-14 23:45:19,519] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20547234 page 83
+[2022-04-14 23:45:28,363] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20547235 page 84
+[2022-04-14 23:45:34,631] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20551030 page 85
+[2022-04-14 23:45:37,242] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20551031 page 86
+[2022-04-14 23:45:42,554] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20551032 page 87
+[2022-04-14 23:45:47,793] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20554197 page 88
+[2022-04-14 23:45:56,638] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20554198 page 89
+[2022-04-14 23:46:05,307] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20554202 page 90
+[2022-04-14 23:46:10,486] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20558757 page 91
+[2022-04-14 23:46:12,126] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20558758 page 92
+[2022-04-14 23:46:16,426] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:46:16] "POST /apiflask/v1/navel/download HTTP/1.1" 200 -
+[2022-04-14 23:46:17,218] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535207 page 93
+[2022-04-14 23:46:19,497] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20558764 page 97
+[2022-04-14 23:46:26,792] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535208 page 94
+[2022-04-14 23:46:27,518] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562035 page 98
+[2022-04-14 23:46:31,880] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562036 page 99
+[2022-04-14 23:46:35,476] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535209 page 95
+[2022-04-14 23:46:40,857] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20535210 page 96
+[2022-04-14 23:46:41,877] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562037 page 100
+[2022-04-14 23:46:46,691] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20558764 page 97
+[2022-04-14 23:46:47,240] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575132 page 101
+[2022-04-14 23:46:48,603] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575133 page 102
+[2022-04-14 23:46:49,579] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575139 page 103
+[2022-04-14 23:46:50,520] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587137 page 104
+[2022-04-14 23:46:53,146] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562035 page 98
+[2022-04-14 23:46:56,401] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562036 page 99
+[2022-04-14 23:46:56,677] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587138 page 105
+[2022-04-14 23:47:01,206] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587139 page 106
+[2022-04-14 23:47:04,755] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20562037 page 100
+[2022-04-14 23:47:06,558] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591238 page 107
+[2022-04-14 23:47:09,867] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591239 page 108
+[2022-04-14 23:47:12,478] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591240 page 109
+[2022-04-14 23:47:12,894] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575132 page 101
+[2022-04-14 23:47:16,129] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575133 page 102
+[2022-04-14 23:47:21,340] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597421 page 110
+[2022-04-14 23:47:23,990] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20575139 page 103
+[2022-04-14 23:47:24,398] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597430 page 111
+[2022-04-14 23:47:28,784] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587137 page 104
+[2022-04-14 23:47:30,187] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587138 page 105
+[2022-04-14 23:47:30,365] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597439 page 112
+[2022-04-14 23:47:31,357] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20587139 page 106
+[2022-04-14 23:47:34,774] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591238 page 107
+[2022-04-14 23:47:34,815] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601527 page 113
+[2022-04-14 23:47:39,100] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591239 page 108
+[2022-04-14 23:47:43,387] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601532 page 114
+[2022-04-14 23:47:45,440] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20591240 page 109
+[2022-04-14 23:47:46,824] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597421 page 110
+[2022-04-14 23:47:47,030] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/venv/lib/python3.7/site-packages/werkzeug/_internal.py:_log:224} INFO - 127.0.0.1 - - [14/Apr/2022 23:47:47] "GET /apiflask/v1/navel/search?website=zhsxs&keyword=測試 HTTP/1.1" 200 -
+[2022-04-14 23:47:49,541] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601533 page 115
+[2022-04-14 23:47:53,975] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597430 page 111
+[2022-04-14 23:47:55,452] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612342 page 116
+[2022-04-14 23:48:00,109] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20597439 page 112
+[2022-04-14 23:48:03,825] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601527 page 113
+[2022-04-14 23:48:05,702] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612343 page 117
+[2022-04-14 23:48:06,523] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612348 page 118
+[2022-04-14 23:48:08,757] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601532 page 114
+[2022-04-14 23:48:11,657] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616266 page 119
+[2022-04-14 23:48:12,991] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616267 page 120
+[2022-04-14 23:48:17,222] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20601533 page 115
+[2022-04-14 23:48:19,497] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612342 page 116
+[2022-04-14 23:48:20,760] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616268 page 121
+[2022-04-14 23:48:24,407] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612343 page 117
+[2022-04-14 23:48:25,574] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20612348 page 118
+[2022-04-14 23:48:27,432] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616266 page 119
+[2022-04-14 23:48:28,758] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616267 page 120
+[2022-04-14 23:48:30,711] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626947 page 122
+[2022-04-14 23:48:32,133] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20616268 page 121
+[2022-04-14 23:48:34,289] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626948 page 123
+[2022-04-14 23:48:37,612] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626957 page 124
+[2022-04-14 23:48:37,745] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626947 page 122
+[2022-04-14 23:48:44,995] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636604 page 125
+[2022-04-14 23:48:45,260] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626948 page 123
+[2022-04-14 23:48:50,377] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20626957 page 124
+[2022-04-14 23:48:50,602] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636605 page 126
+[2022-04-14 23:48:55,220] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636604 page 125
+[2022-04-14 23:48:58,369] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636606 page 127
+[2022-04-14 23:49:05,371] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636605 page 126
+[2022-04-14 23:49:08,445] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20636606 page 127
+[2022-04-14 23:49:08,626] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643269 page 128
+[2022-04-14 23:49:11,182] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643272 page 129
+[2022-04-14 23:49:13,630] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643275 page 130
+[2022-04-14 23:49:15,602] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647744 page 131
+[2022-04-14 23:49:18,748] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643269 page 128
+[2022-04-14 23:49:19,511] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647745 page 132
+[2022-04-14 23:49:21,049] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647751 page 133
+[2022-04-14 23:49:22,925] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643272 page 129
+[2022-04-14 23:49:25,850] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651487 page 134
+[2022-04-14 23:49:27,055] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20643275 page 130
+[2022-04-14 23:49:31,170] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647744 page 131
+[2022-04-14 23:49:33,836] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651488 page 135
+[2022-04-14 23:49:35,311] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647745 page 132
+[2022-04-14 23:49:38,956] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20647751 page 133
+[2022-04-14 23:49:40,843] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651489 page 136
+[2022-04-14 23:49:49,250] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651487 page 134
+[2022-04-14 23:49:50,441] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654856 page 137
+[2022-04-14 23:49:51,147] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651488 page 135
+[2022-04-14 23:49:53,225] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654857 page 138
+[2022-04-14 23:49:54,365] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20651489 page 136
+[2022-04-14 23:49:59,345] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654856 page 137
+[2022-04-14 23:50:00,151] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654858 page 139
+[2022-04-14 23:50:03,275] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658032 page 140
+[2022-04-14 23:50:06,267] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654857 page 138
+[2022-04-14 23:50:13,196] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658033 page 141
+[2022-04-14 23:50:16,828] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20654858 page 139
+[2022-04-14 23:50:18,747] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658032 page 140
+[2022-04-14 23:50:19,084] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658035 page 142
+[2022-04-14 23:50:19,676] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658033 page 141
+[2022-04-14 23:50:20,296] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20658035 page 142
+[2022-04-14 23:50:23,176] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668356 page 143
+[2022-04-14 23:50:27,877] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668356 page 143
+[2022-04-14 23:50:29,614] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668357 page 144
+[2022-04-14 23:50:31,297] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668363 page 145
+[2022-04-14 23:50:33,573] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668357 page 144
+[2022-04-14 23:50:35,571] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20668363 page 145
+[2022-04-14 23:50:36,116] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675560 page 146
+[2022-04-14 23:50:36,384] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675560 page 146
+[2022-04-14 23:50:37,029] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675561 page 147
+[2022-04-14 23:50:37,524] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675561 page 147
+[2022-04-14 23:50:45,409] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675562 page 148
+[2022-04-14 23:50:47,580] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20675562 page 148
+[2022-04-14 23:50:52,817] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681929 page 149
+[2022-04-14 23:50:56,708] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681929 page 149
+[2022-04-14 23:50:59,230] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681934 page 150
+[2022-04-14 23:51:03,355] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681934 page 150
+[2022-04-14 23:51:04,668] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681961 page 151
+[2022-04-14 23:51:06,025] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20681961 page 151
+[2022-04-14 23:51:09,374] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20682723 page 152
+[2022-04-14 23:51:09,568] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20682723 page 152
+[2022-04-14 23:51:16,137] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683536 page 153
+[2022-04-14 23:51:17,896] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683620 page 154
+[2022-04-14 23:51:19,187] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683536 page 153
+[2022-04-14 23:51:21,790] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683620 page 154
+[2022-04-14 23:51:21,881] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683621 page 155
+[2022-04-14 23:51:25,398] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683621 page 155
+[2022-04-14 23:51:27,444] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683641 page 156
+[2022-04-14 23:51:31,382] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683641 page 156
+[2022-04-14 23:51:33,141] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683646 page 157
+[2022-04-14 23:51:36,590] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683646 page 157
+[2022-04-14 23:51:40,450] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683720 page 158
+[2022-04-14 23:51:43,508] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683720 page 158
+[2022-04-14 23:51:50,900] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683721 page 159
+[2022-04-14 23:51:51,944] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683721 page 159
+[2022-04-14 23:51:58,875] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683769 page 160
+[2022-04-14 23:52:01,968] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683769 page 160
+[2022-04-14 23:52:03,925] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683770 page 161
+[2022-04-14 23:52:06,911] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683770 page 161
+[2022-04-14 23:52:11,764] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683913 page 162
+[2022-04-14 23:52:13,896] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20683913 page 162
+[2022-04-14 23:52:19,530] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20684355 page 163
+[2022-04-14 23:52:20,424] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20684355 page 163
+[2022-04-14 23:52:21,482] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20685330 page 164
+[2022-04-14 23:52:29,510] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20685330 page 164
+[2022-04-14 23:52:29,952] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688799 page 165
+[2022-04-14 23:52:37,964] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688799 page 165
+[2022-04-14 23:52:40,595] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688800 page 166
+[2022-04-14 23:52:44,030] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688801 page 167
+[2022-04-14 23:52:46,415] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688800 page 166
+[2022-04-14 23:52:54,035] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688821 page 168
+[2022-04-14 23:52:56,404] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688801 page 167
+[2022-04-14 23:52:58,043] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20688821 page 168
+[2022-04-14 23:53:00,665] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692000 page 169
+[2022-04-14 23:53:05,035] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692000 page 169
+[2022-04-14 23:53:10,815] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692001 page 170
+[2022-04-14 23:53:12,827] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692001 page 170
+[2022-04-14 23:53:14,159] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692004 page 171
+[2022-04-14 23:53:14,405] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20692004 page 171
+[2022-04-14 23:53:22,766] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20695201 page 172
+[2022-04-14 23:53:24,915] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20695201 page 172
+[2022-04-14 23:53:28,421] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20714534 page 173
+[2022-04-14 23:53:30,197] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20718119 page 174
+[2022-04-14 23:53:30,228] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20714534 page 173
+[2022-04-14 23:53:31,115] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20718119 page 174
+[2022-04-14 23:53:37,923] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20721895 page 175
+[2022-04-14 23:53:39,514] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20721895 page 175
+[2022-04-14 23:53:42,837] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20725073 page 176
+[2022-04-14 23:53:44,768] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20725073 page 176
+[2022-04-14 23:53:46,212] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20728237 page 177
+[2022-04-14 23:53:46,541] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20728237 page 177
+[2022-04-14 23:53:49,827] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20733443 page 178
+[2022-04-14 23:53:54,608] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20733443 page 178
+[2022-04-14 23:53:58,091] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20733445 page 179
+[2022-04-14 23:54:00,059] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20733445 page 179
+[2022-04-14 23:54:00,524] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20736660 page 180
+[2022-04-14 23:54:08,575] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20736661 page 181
+[2022-04-14 23:54:10,539] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20736660 page 180
+[2022-04-14 23:54:13,144] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20736661 page 181
+[2022-04-14 23:54:17,203] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20747733 page 182
+[2022-04-14 23:54:19,449] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20747733 page 182
+[2022-04-14 23:54:21,329] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20747734 page 183
+[2022-04-14 23:54:23,168] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20747734 page 183
+[2022-04-14 23:54:28,337] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20750873 page 184
+[2022-04-14 23:54:31,211] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20750873 page 184
+[2022-04-14 23:54:32,255] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20750882 page 185
+[2022-04-14 23:54:34,861] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20756360 page 186
+[2022-04-14 23:54:37,066] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20750882 page 185
+[2022-04-14 23:54:40,678] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20756364 page 187
+[2022-04-14 23:54:43,200] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20756360 page 186
+[2022-04-14 23:54:48,258] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20762415 page 188
+[2022-04-14 23:54:50,219] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20756364 page 187
+[2022-04-14 23:54:55,563] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20762416 page 189
+[2022-04-14 23:54:58,363] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20762415 page 188
+[2022-04-14 23:55:00,220] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20765644 page 190
+[2022-04-14 23:55:04,958] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20762416 page 189
+[2022-04-14 23:55:08,563] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20765652 page 191
+[2022-04-14 23:55:13,585] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20765644 page 190
+[2022-04-14 23:55:16,589] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20768880 page 192
+[2022-04-14 23:55:20,603] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20768887 page 193
+[2022-04-14 23:55:21,590] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20765652 page 191
+[2022-04-14 23:55:24,427] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20768880 page 192
+[2022-04-14 23:55:30,712] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20769246 page 194
+[2022-04-14 23:55:32,254] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20768887 page 193
+[2022-04-14 23:55:34,320] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20772120 page 195
+[2022-04-14 23:55:40,357] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20769246 page 194
+[2022-04-14 23:55:44,828] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20772130 page 196
+[2022-04-14 23:55:48,884] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20772120 page 195
+[2022-04-14 23:55:50,725] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20772130 page 196
+[2022-04-14 23:55:53,132] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20784073 page 197
+[2022-04-14 23:55:58,065] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20794347 page 198
+[2022-04-14 23:55:58,130] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20784073 page 197
+[2022-04-14 23:55:59,698] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20794348 page 199
+[2022-04-14 23:56:07,618] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20794347 page 198
+[2022-04-14 23:56:08,304] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20794357 page 200
+[2022-04-15 01:56:03,433] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20797699 page 201
+[2022-04-15 01:56:04,912] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:164} INFO - nid 60200 pid 20794348 page 199
+[2022-04-15 04:56:20,841] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:171} DEBUG - HTTPConnectionPool(host='tw.zhsxs.com', port=80): Max retries exceeded with url: /zhsread/60200_20794348.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9a2a3ca590>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-04-15 04:56:20,882] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:171} DEBUG - HTTPConnectionPool(host='tw.zhsxs.com', port=80): Max retries exceeded with url: /zhsread/60200_20797699.html (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f9a2a3a1f50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[2022-04-15 04:56:20,952] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:173} WARNING - novel_id 60200 結束抓取
+[2022-04-15 04:56:21,080] {/Users/cheyuanliu/git/realtime/www/oho/oho-flask/navel/downloadZhsxs.py:main_zhsxs:173} WARNING - novel_id 60200 結束抓取
