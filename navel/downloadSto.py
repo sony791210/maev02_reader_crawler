@@ -97,7 +97,13 @@ def check_crawbing(novel_name_id):
     isCrawbing = session.query(Novel_info.crawbing ).filter_by(novel_name_id=novel_name_id).first()
     session.close()
 
-    return  int(isCrawbing[0])
+
+    try:
+        result=int(isCrawbing[0])
+    except:
+        result=0;
+
+    return  result
 
 def save_crawbing(isCrawbing,novel_name_id):
     engine = create_engine(DBClientName, echo=True)

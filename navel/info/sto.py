@@ -51,7 +51,8 @@ class navelInfo:
                                  tags=tags,
                                  cat=cat,
                                  title_photo_url=photoBase64,
-                                 content_type="text")
+                                 content_type="text",
+                                 crawbing=0)
             session.add(all_info)
             session.flush()
             session.commit()
@@ -93,6 +94,6 @@ class navelInfo:
         cat = self.getTag(soup)
         long_info = self.getLongInfo(soup)
         tags = self.getTag(soup)
-        photoBase64 = self.getImgUrl(soup)
+        photoBase64 = self.photoUrl2Base64(self.getImgUrl(soup))
         self.gotoDataInfo(title, author, cat, long_info, tags, photoBase64, novel_name_id)
         return True

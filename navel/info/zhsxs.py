@@ -69,7 +69,9 @@ class navelInfo:
                                      tags=tags,
                                      cat=cat,
                                      title_photo_url=photoBase64,
-                                     content_type="text")
+                                     content_type="text",
+                                     crawbing=0
+                                  )
             session.add(all_info)
             session.flush()
             session.commit()
