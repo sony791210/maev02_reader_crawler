@@ -14,7 +14,7 @@ from db.dbname import Novel_info
 
 DBClientName ="mysql+pymysql://root:19990704@192.168.88.55:3306/app"
 url = "http://tw.zhsxs.com"
-ua = UserAgent()
+ua = UserAgent(verify_ssl=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
 

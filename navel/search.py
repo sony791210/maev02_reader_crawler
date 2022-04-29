@@ -37,7 +37,7 @@ class Search:
     def sto(self,keyword):
         res = scraper.get("https://www.sto.cx/sbn.aspx?k=%s" % (keyword))
         soup = BeautifulSoup(res.text, "html.parser")
-
+        print("https://www.sto.cx/sbn.aspx?k=%s" % (keyword) )
         result=[]
         for st, i in enumerate(soup.find_all(class_="slistbody")):
             title = cc.convert(i.find('a', target=True).text.split("作者：")[0])

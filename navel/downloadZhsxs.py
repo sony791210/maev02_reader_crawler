@@ -19,7 +19,7 @@ import logging
 logger = logging.getLogger()
 
 DBClientName ="mysql+pymysql://root:19990704@192.168.88.55:3306/app"
-ua = UserAgent()
+ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
 url ="http://tw.zhsxs.com"
@@ -65,7 +65,7 @@ def get_nid_pid_page(html):
     return nid ,pid
 
 def get_novel_text(url):
-    ua = UserAgent()
+    ua = UserAgent(use_cache_server=False)
     user_agent = ua.random
     headers = {'user-agent': user_agent}
     novel_res =requests.get(url ,headers=headers)
