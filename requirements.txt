@@ -15,6 +15,7 @@ MarkupSafe==2.1.1
 opencc-python-reimplemented==0.1.6
 PyMySQL==1.0.2
 pyparsing==3.0.8
+python-dotenv==0.20.0
 requests==2.27.1
 requests-toolbelt==0.9.1
 requests2==2.16.0

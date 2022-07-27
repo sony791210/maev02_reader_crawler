@@ -3,7 +3,7 @@ import requests
 import re
 import time
 from fake_useragent import UserAgent
-
+from flask import current_app
 import datetime
 import base64
 
@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from db.dbname import Novel_info
 
-DBClientName ="mysql+pymysql://root:19990704@mysql:3306/app"
+DBClientName = current_app.config["DBCLIENTNAME"]
 url = "http://tw.zhsxs.com"
 ua = UserAgent(verify_ssl=False)
 user_agent = ua.random

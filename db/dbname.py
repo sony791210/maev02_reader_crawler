@@ -3,7 +3,7 @@ from sqlalchemy.types import CHAR, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey, TIMESTAMP, Text, func, \
     UniqueConstraint
-
+from sqlalchemy.dialects.mysql import LONGTEXT
 BaseModel = declarative_base()
 engine = create_engine("mysql+pymysql://root:19990704@mysql:3306/app", echo=True)
 
@@ -37,7 +37,7 @@ class Novel(BaseModel):
     __tablename__ = 'novel'
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(60), comment="章節")
-    content = Column(Text, comment="內容")
+    content = Column(LONGTEXT, comment="內容")
     page = Column(Integer, comment="小說章節")
     novel_name_id = Column(String(60), comment="小說章節")
     create_time = Column(TIMESTAMP, server_default=func.now())
@@ -59,7 +59,7 @@ class Novel_info(BaseModel):
     title = Column(String(60), comment="名稱")
     novel_name_id = Column(String(60), comment="小說id")
     comic_name_id = Column(String(60), comment="漫畫id")
-    title_photo_url = Column(Text, comment="封面圖片")
+    title_photo_url = Column(LONGTEXT, comment="封面圖片")
     data_update_time = Column(TIMESTAMP, comment="更新時間")
     author = Column(String(60), comment="作者")
     long_info = Column(Text, comment="簡介")

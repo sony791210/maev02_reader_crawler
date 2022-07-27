@@ -16,7 +16,6 @@ class Search:
 
 
     def zhsxs(self,keyword):
-        print(current_app.config)
         ua = UserAgent(use_cache_server=False)
         user_agent = ua.random
         headers = {'user-agent': user_agent}

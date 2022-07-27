@@ -4,6 +4,7 @@ import requests
 import re
 import time
 from fake_useragent import UserAgent
+from flask import current_app
 
 import datetime
 import base64
@@ -28,7 +29,7 @@ cc= OpenCC('s2tw')
 import logging
 logger = logging.getLogger()
 
-DBClientName="mysql+pymysql://root:19990704@mysql:3306/app"
+DBClientName = current_app.config["DBCLIENTNAME"]
 ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}

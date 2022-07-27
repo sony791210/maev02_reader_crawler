@@ -10,14 +10,14 @@ import base64
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 from db.dbname import Novel_info
-
+from flask import current_app
 
 import cloudscraper
 from opencc import OpenCC
 
 cc= OpenCC('s2tw')
 scraper = cloudscraper.create_scraper(delay=10) # returns a CloudScraper instance
-DBClientName="mysql+pymysql://root:19990704@mysql:3306/app"
+DBClientName = current_app.config["DBCLIENTNAME"]
 
 class navelInfo:
     def __init__(self):

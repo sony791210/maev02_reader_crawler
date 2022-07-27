@@ -10,6 +10,12 @@ class Config:
     """Base config."""
     SECRET_KEY = environ.get('SECRET_KEY')
     SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
+    # "mysql+pymysql://root:19990704@mysql:3306/app"
+    DBCLIENTNAME="mysql+pymysql://%s:%s@%s:%s/%s"%(environ.get("DB_USERNAME"),
+                                                   environ.get("DB_PASSWORD"),
+                                                   environ.get("DB_URL"),
+                                                   environ.get("DB_PORT"),
+                                                   environ.get("DB_NAME"))
 
 
 class ProdConfig(Config):
