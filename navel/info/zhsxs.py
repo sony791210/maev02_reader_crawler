@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from db.dbname import Novel_info
 
-DBClientName = current_app.config["DBCLIENTNAME"]
+
 url = "http://tw.zhsxs.com"
 ua = UserAgent(verify_ssl=False)
 user_agent = ua.random
@@ -52,6 +52,7 @@ class navelInfo:
 
 
     def gotoDataInfo(self,title, author, cat, long_info, tags, photoBase64, novel_name_id):
+        DBClientName = current_app.config["DBCLIENTNAME"]
         engine = create_engine(DBClientName, echo=True)
         session = Session(engine)
         session.begin()

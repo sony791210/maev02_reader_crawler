@@ -18,7 +18,7 @@ from navel.info.zhsxs import navelInfo
 import logging
 logger = logging.getLogger()
 
-DBClientName = current_app.config["DBCLIENTNAME"]
+
 ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
@@ -28,6 +28,7 @@ NavelInfoInit=navelInfo()
 
 
 def gotoDB(title ,content ,page ,novel_name_id ,nid ,pid):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -74,6 +75,7 @@ def get_novel_text(url):
     return text
 
 def get_db_pid(nid):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -97,6 +99,7 @@ def get_db_pid(nid):
 
 
 def check_crawbing(novel_name_id):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -112,6 +115,7 @@ def check_crawbing(novel_name_id):
     return  result;
 
 def save_crawbing(isCrawbing,novel_name_id):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()

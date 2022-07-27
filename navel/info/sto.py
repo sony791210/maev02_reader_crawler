@@ -17,7 +17,7 @@ from opencc import OpenCC
 
 cc= OpenCC('s2tw')
 scraper = cloudscraper.create_scraper(delay=10) # returns a CloudScraper instance
-DBClientName = current_app.config["DBCLIENTNAME"]
+
 
 class navelInfo:
     def __init__(self):
@@ -34,6 +34,7 @@ class navelInfo:
         return base64.b64encode(scraper.get(new_url).content)
 
     def gotoDataInfo(self,title, author, cat, long_info, tags, photoBase64, novel_name_id):
+        DBClientName = current_app.config["DBCLIENTNAME"]
         engine = create_engine(DBClientName, echo=True)
         session = Session(engine)
         session.begin()

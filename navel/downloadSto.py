@@ -29,7 +29,7 @@ cc= OpenCC('s2tw')
 import logging
 logger = logging.getLogger()
 
-DBClientName = current_app.config["DBCLIENTNAME"]
+
 ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
@@ -46,6 +46,7 @@ def getContent(soup):
 
 
 def gotoDBCrawlPage(page, novel_name_id):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -68,6 +69,7 @@ def gotoDBCrawlPage(page, novel_name_id):
 
 
 def gotoDBCrawlInfo(title, content, novel_name_id, page):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -91,6 +93,7 @@ def gotoDBCrawlInfo(title, content, novel_name_id, page):
     session.close()
 
 def check_crawbing(novel_name_id):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -107,6 +110,7 @@ def check_crawbing(novel_name_id):
     return  result
 
 def save_crawbing(isCrawbing,novel_name_id):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
@@ -123,6 +127,7 @@ def save_crawbing(isCrawbing,novel_name_id):
 
 
 def get_db_pid(nid):
+    DBClientName = current_app.config["DBCLIENTNAME"]
     engine = create_engine(DBClientName, echo=True)
     session = Session(engine)
     session.begin()
