@@ -17,7 +17,7 @@ from opencc import OpenCC
 
 cc= OpenCC('s2tw')
 scraper = cloudscraper.create_scraper(delay=10) # returns a CloudScraper instance
-DBClientName="mysql+pymysql://root:19990704@192.168.88.55:3306/app"
+DBClientName="mysql+pymysql://root:19990704@mysql:3306/app"
 
 class navelInfo:
     def __init__(self):

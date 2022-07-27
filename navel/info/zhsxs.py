@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 from db.dbname import Novel_info
 
-DBClientName ="mysql+pymysql://root:19990704@192.168.88.55:3306/app"
+DBClientName ="mysql+pymysql://root:19990704@mysql:3306/app"
 url = "http://tw.zhsxs.com"
 ua = UserAgent(verify_ssl=False)
 user_agent = ua.random

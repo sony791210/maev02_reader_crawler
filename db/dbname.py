@@ -5,7 +5,7 @@ from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, 
     UniqueConstraint
 
 BaseModel = declarative_base()
-engine = create_engine("mysql+pymysql://root:19990704@192.168.88.55:3306/app", echo=True)
+engine = create_engine("mysql+pymysql://root:19990704@mysql:3306/app", echo=True)
 
 
 def init_db():

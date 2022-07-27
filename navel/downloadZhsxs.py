@@ -18,7 +18,7 @@ from navel.info.zhsxs import navelInfo
 import logging
 logger = logging.getLogger()
 
-DBClientName ="mysql+pymysql://root:19990704@192.168.88.55:3306/app"
+DBClientName ="mysql+pymysql://root:19990704@mysql:3306/app"
 ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
