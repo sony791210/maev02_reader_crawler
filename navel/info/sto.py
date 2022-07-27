@@ -95,5 +95,7 @@ class navelInfo:
         long_info = self.getLongInfo(soup)
         tags = self.getTag(soup)
         photoBase64 = self.photoUrl2Base64(self.getImgUrl(soup))
+        print(title)
+        print("存入DB")
         self.gotoDataInfo(title, author, cat, long_info, tags, photoBase64, novel_name_id)
         return True

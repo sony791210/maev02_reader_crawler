@@ -3,6 +3,7 @@ import requests
 import re
 import time
 from fake_useragent import UserAgent
+from flask import current_app
 #
 import datetime
 import base64
@@ -15,6 +16,7 @@ class Search:
 
 
     def zhsxs(self,keyword):
+        print(current_app.config)
         ua = UserAgent(use_cache_server=False)
         user_agent = ua.random
         headers = {'user-agent': user_agent}

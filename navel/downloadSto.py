@@ -141,14 +141,18 @@ def get_db_pid(nid):
 
 
 def main_sto(novel_id):
+    print(novel_id)
     novel_name_id = int(novel_id)
     NavelInfoInit.main(novel_id);
 
     # 查看是否在抓取中
+    print("check 抓取中")
     if(check_crawbing(novel_name_id)==1):
+        print("抓取中")
         logger.warning(("novel_id %s 抓取中") % (novel_name_id))
         return "抓取中"
     else:
+        print("開始抓取")
         save_crawbing(1,novel_name_id)
 
 
@@ -176,6 +180,8 @@ def main_sto(novel_id):
     try:
         for leaf in range(lastPage):
             if( (leaf+1) > int(maxPage) ):
+                print("爬取")
+                print(("nid %s  page %s") % (novel_name_id,  leaf+1))
                 logger.info(("nid %s  page %s") % (novel_name_id,  leaf+1))
                 now_page_url = "%sbook-%s-%s.html" % (url, novel_name_id, leaf + 1)
                 res = scraper.get(now_page_url)
@@ -188,6 +194,7 @@ def main_sto(novel_id):
                 gotoDBCrawlPage(leaf + 1, novel_name_id)
                 time.sleep(random.random() * 5)
     except Exception as e:
+        print("sto,for leaf 失敗,nid is %s" % (novel_name_id))
         logger.debug("sto,for leaf 失敗,nid is %s" % (novel_name_id))
         logger.debug(str(e))
 

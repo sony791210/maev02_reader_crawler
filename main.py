@@ -3,6 +3,8 @@ from flask import Flask,request
 from navel.search import Search
 from tool.response import sucess,fail
 app = Flask(__name__)
+app.config.from_object('config.ProdConfig')
+
 
 from navel.downloadZhsxs import  main_zhsxs
 from navel.downloadSto import  main_sto
@@ -10,11 +12,17 @@ from navel.downloadSto import  main_sto
 
 # 設定多線程
 from concurrent.futures import ThreadPoolExecutor
-executor = ThreadPoolExecutor(10)
+executor = ThreadPoolExecutor(3)
+
+
+
+
+
 
 # 增加lgo
 import logging
 import logging.config
+
 
 log_level = "DEBUG"
 LOGFILENAME = "logs/flask.log"
@@ -101,4 +109,5 @@ def getNavelDownload():
         return  fail("9999",e)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port="5000")
+    print(app.config)
+    app.run(host="0.0.0.0",port="4000")
