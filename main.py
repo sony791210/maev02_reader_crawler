@@ -1,10 +1,13 @@
 # save this as app.py
-from flask import Flask,request
+from flask import Flask,request,session
 from navel.search import Search
 from tool.response import sucess,fail
+import os
+from datetime import timedelta
 app = Flask(__name__)
 app.config.from_object('config.ProdConfig')
-
+app.config['SECRET_KEY'] = os.urandom(24)
+app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=31)
 
 from navel.downloadZhsxs import  main_zhsxs
 from navel.downloadSto import  main_sto
@@ -86,6 +89,7 @@ def getNavelSearch():
 def getNavelDownload():
     try:
 
+
         data = request.get_json()
         website =data["website"]
         navelId =data["navelId"]
@@ -99,15 +103,14 @@ def getNavelDownload():
 
         if(website=="zhsxs"):
             print('執行多線程')
-            executor.submit(main_zhsxs, (navelId))
+            executor.submit(main_zhsxs, navelId, app.config)
         elif (website == "sto"):
             print('執行多線程')
-            executor.submit(main_sto, (navelId))
+            executor.submit(main_sto, navelId, app.config)
         return  "testtesttest"
 
     except Exception as e:
         return  fail("9999",e)
 
 if __name__ == '__main__':
-    print(app.config)
     app.run(host="0.0.0.0",port="4000")

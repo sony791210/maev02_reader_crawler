@@ -18,7 +18,7 @@ ua = UserAgent(verify_ssl=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
 
-
+global DBCLIENTNAME
 class navelInfo:
     def getIntroduction(self,idd):
 
@@ -52,8 +52,8 @@ class navelInfo:
 
 
     def gotoDataInfo(self,title, author, cat, long_info, tags, photoBase64, novel_name_id):
-        DBClientName = current_app.config["DBCLIENTNAME"]
-        engine = create_engine(DBClientName, echo=True)
+
+        engine = create_engine(DBCLIENTNAME, echo=True)
         session = Session(engine)
         session.begin()
 
@@ -82,8 +82,9 @@ class navelInfo:
         session.close()
 
 
-    def main(self,novel_name_id):
-
+    def main(self,novel_name_id,dbname=None):
+        global DBCLIENTNAME
+        DBCLIENTNAME=dbname
         novel_name_id = int(novel_name_id)
         text, photoUrl = self.getIntroduction(novel_name_id)
         print(text)

@@ -4,7 +4,7 @@ import requests
 import re
 import time
 from fake_useragent import UserAgent
-from flask import current_app
+from flask import current_app,session
 
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey ,TIMESTAMP ,Text ,func
 from sqlalchemy.orm import Session
@@ -26,10 +26,12 @@ url ="http://tw.zhsxs.com"
 
 NavelInfoInit=navelInfo()
 
+global DBCLIENTNAME
+
 
 def gotoDB(title ,content ,page ,novel_name_id ,nid ,pid):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -75,8 +77,8 @@ def get_novel_text(url):
     return text
 
 def get_db_pid(nid):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -99,8 +101,8 @@ def get_db_pid(nid):
 
 
 def check_crawbing(novel_name_id):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -115,8 +117,8 @@ def check_crawbing(novel_name_id):
     return  result;
 
 def save_crawbing(isCrawbing,novel_name_id):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -134,10 +136,13 @@ def save_crawbing(isCrawbing,novel_name_id):
 
 
 
-def main_zhsxs(novel_id):
+def main_zhsxs(novel_id,config):
+    global DBCLIENTNAME
+    DBCLIENTNAME = config["DBCLIENTNAME"]
+
     novel_id=int(novel_id)
     try:
-        NavelInfoInit.main(novel_id);
+        NavelInfoInit.main(novel_id,DBCLIENTNAME);
     except Exception as e:
         print(e)
         logger.debug(str(e))

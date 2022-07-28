@@ -29,7 +29,7 @@ cc= OpenCC('s2tw')
 import logging
 logger = logging.getLogger()
 
-
+global DBCLIENTNAME
 ua = UserAgent(use_cache_server=False)
 user_agent = ua.random
 headers = {'user-agent': user_agent}
@@ -46,8 +46,8 @@ def getContent(soup):
 
 
 def gotoDBCrawlPage(page, novel_name_id):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -69,8 +69,8 @@ def gotoDBCrawlPage(page, novel_name_id):
 
 
 def gotoDBCrawlInfo(title, content, novel_name_id, page):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
     if (len(title) > 20):
@@ -93,8 +93,8 @@ def gotoDBCrawlInfo(title, content, novel_name_id, page):
     session.close()
 
 def check_crawbing(novel_name_id):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -110,8 +110,8 @@ def check_crawbing(novel_name_id):
     return  result
 
 def save_crawbing(isCrawbing,novel_name_id):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -127,8 +127,8 @@ def save_crawbing(isCrawbing,novel_name_id):
 
 
 def get_db_pid(nid):
-    DBClientName = current_app.config["DBCLIENTNAME"]
-    engine = create_engine(DBClientName, echo=True)
+
+    engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
 
@@ -146,10 +146,13 @@ def get_db_pid(nid):
 
 
 
-def main_sto(novel_id):
+def main_sto(novel_id,config):
+    global DBCLIENTNAME
+    DBCLIENTNAME = config["DBCLIENTNAME"]
+
     print(novel_id)
     novel_name_id = int(novel_id)
-    NavelInfoInit.main(novel_id);
+    NavelInfoInit.main(novel_id,DBCLIENTNAME);
 
     # 查看是否在抓取中
     print("check 抓取中")
