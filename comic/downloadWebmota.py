@@ -103,6 +103,6 @@ def main_webmota(comicId,config):
         download(webname,comicId,st,URLORIGEN)
         time.sleep(1)
         #紀錄到DB才行
-        save_comic_info(comicId, st, page.text, "public_download/%s/%03d"%(comicId,st) )
+        save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
         break
 

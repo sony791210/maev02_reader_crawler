@@ -23,7 +23,7 @@ def download(webname,comicId,page,refererURL=None):
     }
     with open("public/%s/%s/%03d" %(webname,comicId,page), 'r') as f:
         contents = f.readlines()
-    output_dir="public_download/%s/%03d"%(comicId,page)
+    output_dir="public_download/comic/%s/%03d"%(comicId,page)
     os.makedirs(output_dir, exist_ok=True)
     for index,url in enumerate(contents):
         # replace /n

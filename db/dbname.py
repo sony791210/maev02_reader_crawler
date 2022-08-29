@@ -75,7 +75,7 @@ class Novel_info(BaseModel):
 
 
 class Comic(BaseModel):
-    __tablename__ = 'novel'
+    __tablename__ = 'comic'
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(String(60), comment="章節")
     path  = Column(String(200), comment="路徑")

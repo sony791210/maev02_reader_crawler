@@ -125,10 +125,10 @@ def getComicDownload():
 
         if (website == "mhgui"):
             print('執行多線程')
-            main_mhgui(comicId, app.config)
+            executor.submit(main_mhgui,comicId, app.config)
         elif(website == "webmota"):
             print('執行多線程')
-            main_webmota(comicId, app.config)
+            executor.submit(main_webmota, comicId, app.config)
 
 
         return "testtesttest"
