@@ -45,6 +45,8 @@ class Novel(BaseModel):
     UniqueConstraint(page, novel_name_id)
 
 
+
+
 class Novel_list(BaseModel):
     __tablename__ = 'novel_list'
     id = Column(Integer, primary_key=True, autoincrement=True)
@@ -71,3 +73,14 @@ class Novel_info(BaseModel):
     UniqueConstraint(novel_name_id, comic_name_id)
 
 
+
+class Comic(BaseModel):
+    __tablename__ = 'novel'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    title = Column(String(60), comment="章節")
+    path  = Column(String(200), comment="路徑")
+    page = Column(Integer, comment="漫畫章節")
+    comic_name_id = Column(String(200), comment="小說章節")
+    create_time = Column(TIMESTAMP, server_default=func.now())
+    update_time = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
+    UniqueConstraint(page, comic_name_id)

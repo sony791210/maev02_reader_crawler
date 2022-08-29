@@ -12,14 +12,12 @@ app.config['PERMANENT_SESSION_LIFETIME'] = timedelta(days=31)
 from navel.downloadZhsxs import  main_zhsxs
 from navel.downloadSto import  main_sto
 
+from comic.downloadMhgui import  main_mhgui
+from comic.downloadWebmota import main_webmota
 
 # 設定多線程
 from concurrent.futures import ThreadPoolExecutor
 executor = ThreadPoolExecutor(3)
-
-
-
-
 
 
 # 增加lgo
@@ -88,8 +86,6 @@ def getNavelSearch():
 @app.route('/apiflask/v1/navel/download', methods=['POST'])
 def getNavelDownload():
     try:
-
-
         data = request.get_json()
         website =data["website"]
         navelId =data["navelId"]
@@ -109,6 +105,33 @@ def getNavelDownload():
             executor.submit(main_sto, navelId, app.config)
         return  "testtesttest"
 
+    except Exception as e:
+        return  fail("9999",e)
+
+
+
+
+@app.route('/apiflask/v1/comic/download', methods=['POST'])
+def getComicDownload():
+    try:
+        data = request.get_json()
+        website =data["website"]
+        comicId =data["comicId"]
+
+        if not(comicId):
+            raise ValueError("no navelId")
+        elif not(website):
+            raise ValueError("no website")
+
+        if (website == "mhgui"):
+            print('執行多線程')
+            main_mhgui(comicId, app.config)
+        elif(website == "webmota"):
+            print('執行多線程')
+            main_webmota(comicId, app.config)
+
+
+        return "testtesttest"
     except Exception as e:
         return  fail("9999",e)
 
