@@ -4,6 +4,8 @@ from selenium import webdriver
 import time
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
 import concurrent.futures
 
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey ,TIMESTAMP ,Text ,func
@@ -21,7 +23,11 @@ global DBCLIENTNAME
 
 
 def list_page(comicId):
-    chrome = webdriver.Chrome('./chromedriver', chrome_options=getOptions())
+    chrome = webdriver.Remote(
+        # command_executor='http://192.168.50.122:4444/wd/hub',
+        command_executor='http://platform_chrome:4444/wd/hub',
+        desired_capabilities=DesiredCapabilities.CHROME
+    )
     chrome.get("%s/%s" % (URL, comicId))
     soup = BeautifulSoup(chrome.page_source, 'html.parser')
     # 合併list
