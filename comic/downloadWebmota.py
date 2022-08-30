@@ -6,6 +6,11 @@ from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 import concurrent.futures
 
+from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey ,TIMESTAMP ,Text ,func
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+
+
 from  tool.download import download
 from db.dbname import Comic,Platform_info
 
@@ -84,7 +89,7 @@ def save_comic_info(comic_name_id,page,title,path):
         session.close()
         return True
     try:
-        novel_value = Novel(comic_name_id=comic_name_id, page=page,path=path,title=title)
+        novel_value = Comic(comic_name_id=comic_name_id, page=page,path=path,title=title)
         session.add(novel_value)
         session.flush()
         session.commit()
@@ -98,15 +103,15 @@ def save_info(comic_name_id,title,tags,dec):
     engine = create_engine(DBCLIENTNAME, echo=True)
     session = Session(engine)
     session.begin()
-    instance = session.query(Comic).filter_by(comic_name_id=comic_name_id).first()
+    instance = session.query(Platform_info).filter_by(comic_name_id=comic_name_id).first()
 
     if instance:
         session.close()
         return True
     try:
         ttag=",".join(str(x) for x in tags)
-        novel_value = Novel(comic_name_id=comic_name_id,title=title,long_info=dec,tags=ttag)
-        session.add(novel_value)
+        platform_value = Platform_info(comic_name_id=comic_name_id,title=title,long_info=dec,tags=ttag)
+        session.add(platform_value)
         session.flush()
         session.commit()
     except:
@@ -120,7 +125,7 @@ def main_webmota(comicId,config):
     DBCLIENTNAME = config["DBCLIENTNAME"]
 
     title,tags,dec,pages=list_page(comicId);
-    save_info(comic_name_id,title,tags,dec)
+    save_info(comicId,title,tags,dec)
     for st,page in enumerate(pages):
         imgUrlList=getImgUrl(page['href'])
         # 拿取漫畫頁面所有的圖片url，並存成落地黨
