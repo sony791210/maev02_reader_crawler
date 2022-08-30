@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 import concurrent.futures
 
 from  tool.download import download
-from db.dbname import Comic
+from db.dbname import Comic,Platform_info
 
 URLORIGEN="https://www.baozimh.com"
 URL="https://www.baozimh.com/comic"
@@ -23,9 +23,15 @@ def list_page(comicId):
     mergedlist = [];
     mergedlist.extend( soup.find(id="chapter-items").find_all("a") )
     mergedlist.extend(  soup.find(id="chapters_other_list").find_all("a") )
+
+    title=soup.title.text.replace('包子漫畫', '').replace(" ","")
+    tags=[i.text.replace("\n","").replace(" ","") for i in soup.find(class_="tag-list").find_all("span")]
+    dec=soup.find(class_="comics-detail__desc").text
+
     chrome.close()
     chrome.quit()
-    return mergedlist
+
+    return title,tags,dec,mergedlist
 
 
 def getImgUrl(path):
@@ -77,9 +83,29 @@ def save_comic_info(comic_name_id,page,title,path):
     if instance:
         session.close()
         return True
-
     try:
         novel_value = Novel(comic_name_id=comic_name_id, page=page,path=path,title=title)
+        session.add(novel_value)
+        session.flush()
+        session.commit()
+    except:
+        session.rollback()
+        raise
+    session.close()
+
+
+def save_info(comic_name_id,title,tags,dec):
+    engine = create_engine(DBCLIENTNAME, echo=True)
+    session = Session(engine)
+    session.begin()
+    instance = session.query(Comic).filter_by(comic_name_id=comic_name_id).first()
+
+    if instance:
+        session.close()
+        return True
+    try:
+        ttag=",".join(str(x) for x in tags)
+        novel_value = Novel(comic_name_id=comic_name_id,title=title,long_info=dec,tags=ttag)
         session.add(novel_value)
         session.flush()
         session.commit()
@@ -93,7 +119,8 @@ def main_webmota(comicId,config):
     global DBCLIENTNAME
     DBCLIENTNAME = config["DBCLIENTNAME"]
 
-    pages=list_page(comicId);
+    title,tags,dec,pages=list_page(comicId);
+    save_info(comic_name_id,title,tags,dec)
     for st,page in enumerate(pages):
         imgUrlList=getImgUrl(page['href'])
         # 拿取漫畫頁面所有的圖片url，並存成落地黨

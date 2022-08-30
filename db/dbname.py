@@ -74,6 +74,25 @@ class Novel_info(BaseModel):
 
 
 
+class Platform_info(BaseModel):
+    __tablename__ = 'platform_info'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    title = Column(String(60), comment="名稱")
+    novel_name_id = Column(String(60), comment="小說id")
+    comic_name_id = Column(String(60), comment="漫畫id")
+    video_name_id = Column(String(60), comment="影片id")
+    title_photo_url = Column(LONGTEXT, comment="封面圖片")
+    data_update_time = Column(TIMESTAMP, comment="更新時間")
+    author = Column(String(60), comment="作者")
+    long_info = Column(Text, comment="簡介")
+    tags = Column(String(60), comment="tags")
+    cat = Column(String(60), comment="類型")
+    content_type = Column(String(60), comment="text || png || mp4")
+    crawbing = Column(Integer, comment="是否抓取中")
+    update_time = Column(TIMESTAMP, server_default=func.now(), onupdate=func.now())
+    UniqueConstraint(novel_name_id, comic_name_id,video_name_id)
+
+
 class Comic(BaseModel):
     __tablename__ = 'comic'
     id = Column(Integer, primary_key=True, autoincrement=True)
