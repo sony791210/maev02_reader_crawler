@@ -3,6 +3,5 @@ venv
 *.pyc
 .idea/*
 .env
-
-pulbic/
+public
 public_download/

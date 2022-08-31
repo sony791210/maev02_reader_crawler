@@ -46,7 +46,11 @@ def list_page(comicId):
 
 
 def getImgUrl(path):
-    chrome = webdriver.Chrome('./chromedriver', chrome_options=getOptions())
+    chrome = webdriver.Remote(
+        # command_executor='http://192.168.50.122:4444/wd/hub',
+        command_executor='http://platform_chrome:4444/wd/hub',
+        desired_capabilities=DesiredCapabilities.CHROME
+    )
     newPath="%s/%s" % (URLORIGEN, path)
 
     mergedlist = [];
@@ -142,5 +146,5 @@ def main_webmota(comicId,config):
         time.sleep(1)
         #紀錄到DB才行
         save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
-        break
+
 
