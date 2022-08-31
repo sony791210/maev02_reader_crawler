@@ -35,7 +35,7 @@ def download(webname,comicId,page,refererURL=None):
             time.sleep(1)
             response = requests.get(newURL, headers=headers)
             print(response.status_code)
-            if(count>=5):
+            if(count>=2):
                 response.status_code=200
 
         time.sleep(0.5)

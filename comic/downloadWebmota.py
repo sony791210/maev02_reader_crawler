@@ -134,17 +134,22 @@ def main_webmota(comicId,config):
     global DBCLIENTNAME
     DBCLIENTNAME = config["DBCLIENTNAME"]
 
-    title,tags,dec,pages=list_page(comicId);
+    title,tags,dec,pages=list_page(comicId)
     save_info(comicId,title,tags,dec)
     for st,page in enumerate(pages):
-        imgUrlList=getImgUrl(page['href'])
-        # 拿取漫畫頁面所有的圖片url，並存成落地黨
-        saveTxt(st, imgUrlList, comicId)
-        time.sleep(1)
-        # 開始下載 影像
-        download(webname,comicId,st,URLORIGEN)
-        time.sleep(1)
-        #紀錄到DB才行
-        save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
+        try:
+            if(os.path.isfile("public/webmota/%s/%03d" %(comicId,st))):
+                continue
+            imgUrlList=getImgUrl(page['href'])
+            # 拿取漫畫頁面所有的圖片url，並存成落地黨
+            saveTxt(st, imgUrlList, comicId)
+            time.sleep(1)
+            # 開始下載 影像
+            download(webname,comicId,st,URLORIGEN)
+            time.sleep(1)
+            #紀錄到DB才行
+            save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
+        except Exception as e:
+            print(e)
 
 
