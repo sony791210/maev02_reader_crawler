@@ -63,7 +63,7 @@ def getImgUrl(path):
         mergedlist.extend( soup.find_all("img") );
 
         # 取出是否要下一頁 或 下一話之類的問題
-        name=soup.find(class_="next_chapter").find('a').text.replace(" ", "").replace("\n", "")
+        name=soup.find_all(class_="next_chapter")[-1].find('a').text.replace(" ", "").replace("\n", "")
         newPath=soup.find(class_="next_chapter").find('a')['href']
 
         st +=1 ;
@@ -74,9 +74,11 @@ def getImgUrl(path):
         if(name==""):
             isNext = False
         # end page 會出現
+        點選進入下一話
         if(name=="點選進入下一話"):
             isNext=False
 
+    chrome.close()
     return mergedlist
 
 
