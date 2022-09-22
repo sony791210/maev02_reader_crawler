@@ -76,7 +76,6 @@ def getImgUrl(path):
         if(name==""):
             isNext = False
         # end page 會出現
-        點選進入下一話
         if(name=="點選進入下一話"):
             isNext=False
 
