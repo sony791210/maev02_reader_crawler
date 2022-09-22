@@ -135,11 +135,14 @@ def save_info(comic_name_id,title,tags,dec):
 
 
 def main_webmota(comicId,config):
+    logger("gogo")
     global DBCLIENTNAME
     DBCLIENTNAME = config["DBCLIENTNAME"]
-
+    logger("before get list")
     title,tags,dec,pages=list_page(comicId)
+    logger("done get list")
     save_info(comicId,title,tags,dec)
+    logger("done save DB")
     for st,page in enumerate(pages):
         try:
             logger("page")
