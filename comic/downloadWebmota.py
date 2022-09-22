@@ -16,6 +16,8 @@ from sqlalchemy import func
 from  tool.download import download
 from db.dbname import Comic,Platform_info
 
+from tool.log import logger
+
 URLORIGEN="https://www.baozimh.com"
 URL="https://www.baozimh.com/comic"
 webname="webmota"
@@ -140,18 +142,24 @@ def main_webmota(comicId,config):
     save_info(comicId,title,tags,dec)
     for st,page in enumerate(pages):
         try:
+            logger("page")
+            logger(st)
             if(os.path.isfile("public/webmota/%s/%03d" %(comicId,st))):
                 continue
+            logger("beform get url")
             imgUrlList=getImgUrl(page['href'])
             # 拿取漫畫頁面所有的圖片url，並存成落地黨
             saveTxt(st, imgUrlList, comicId)
+            logger("done get url")
             time.sleep(1)
             # 開始下載 影像
+            logger("beform get images")
             download(webname,comicId,st,URLORIGEN)
+            logger("done get images")
             time.sleep(1)
             #紀錄到DB才行
             save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
         except Exception as e:
-            print(e)
+            logger(e)
 
 
