@@ -3,7 +3,7 @@
 import requests
 import os
 import time
-
+import re
 
 def header(refererURL=None):
     user_agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36"
@@ -28,6 +28,7 @@ def download(webname,comicId,page,refererURL=None):
     for index,url in enumerate(contents):
         # replace /n
         newURL=url[:-1]
+        # 爬取圖片
         response = requests.get(newURL, headers=headers)
         count=0
         while response.status_code!=200:
@@ -38,8 +39,19 @@ def download(webname,comicId,page,refererURL=None):
             if(count>=2):
                 response.status_code=200
 
-        time.sleep(0.5)
         # file_format=check_list[ response.headers["content-type"]  ] if (response.headers["content-type"] in check_list) else "png"
-        file_format="png"
-        with open("%s/%03d.%s"%(output_dir,index,file_format), 'wb') as f:
+
+
+        # 找出檔名
+        names=re.compile(r"\w+\.jpg").findall(newURL)
+        if names:
+            # remove .jpg
+            name=names[0][:-4]
+        else:
+            # remove .jpg
+            name=0
+
+        # 存檔
+        file_format = "png"
+        with open("%s/%03d.%s"%(output_dir,name,file_format), 'wb') as f:
             f.write(response.content)
