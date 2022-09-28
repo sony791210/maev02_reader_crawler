@@ -48,16 +48,19 @@ def list_page(comicId):
 
 
 def getImgUrl(path):
+    logger('be remote');
     chrome = webdriver.Remote(
         # command_executor='http://192.168.50.122:4444/wd/hub',
         command_executor='http://platform_chrome:4444/wd/hub',
         desired_capabilities=DesiredCapabilities.CHROME
     )
+
     newPath="%s/%s" % (URLORIGEN, path)
 
     mergedlist = [];
     isNext=True;
     st=0;
+    logger('before while');
     while isNext:
         chrome.get(newPath)
         soup = BeautifulSoup(chrome.page_source, 'html.parser')

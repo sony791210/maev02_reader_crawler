@@ -14,42 +14,50 @@ def header(refererURL=None):
     return headers
 
 
+def getImage(newURL,headers):
+    # 爬取圖片
+    response = requests.get(newURL, headers=headers)
+    count = 0
+    while response.status_code != 200:
+        count = count + 1
+        time.sleep(1)
+        response = requests.get(newURL, headers=headers)
+        print(response.status_code)
+        if (count >= 2):
+            response.status_code = 200
+    return response
+
+
+def getName(newURL):
+    # 找出檔名
+    try:
+        names = re.compile(r"\w+\.jpg").findall(newURL)
+        if names:
+            # remove .jpg
+            name = int(names[0][:-4])
+        else:
+            # remove .jpg
+            name = 0
+    except:
+        name = 0
+    return name
+
 def download(webname,comicId,page,refererURL=None):
-    headers=header(refererURL)
-    check_list = {
-        "image/jpeg": "jpeg",
-        "image/png": "png",
-        "image/jpg": "jpg"
-    }
+    headers = header(refererURL)
+
+    # 確定資料夾是否存在，開心資料夾
     with open("public/%s/%s/%03d" %(webname,comicId,page), 'r') as f:
         contents = f.readlines()
     output_dir="public_download/comic/%s/%03d"%(comicId,page)
     os.makedirs(output_dir, exist_ok=True)
+
     for index,url in enumerate(contents):
         # replace /n
-        newURL=url[:-1]
-        # 爬取圖片
-        response = requests.get(newURL, headers=headers)
-        count=0
-        while response.status_code!=200:
-            count=count+1
-            time.sleep(1)
-            response = requests.get(newURL, headers=headers)
-            print(response.status_code)
-            if(count>=2):
-                response.status_code=200
-
-        # file_format=check_list[ response.headers["content-type"]  ] if (response.headers["content-type"] in check_list) else "png"
-
-
-        # 找出檔名
-        names=re.compile(r"\w+\.jpg").findall(newURL)
-        if names:
-            # remove .jpg
-            name=names[0][:-4]
-        else:
-            # remove .jpg
-            name=0
+        newURL = url[:-1]
+        # 抓取圖片
+        response=getImage(newURL,headers)
+        # 拿出數字
+        name=getName(newURL)
 
         # 存檔
         file_format = "png"
