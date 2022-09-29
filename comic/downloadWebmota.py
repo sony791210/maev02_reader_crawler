@@ -18,18 +18,37 @@ from db.dbname import Comic,Platform_info
 
 from tool.log import logger
 
+# 設定多線程
+from concurrent.futures import ThreadPoolExecutor
+executor = ThreadPoolExecutor(3)
+
 URLORIGEN="https://www.baozimh.com"
 URL="https://www.baozimh.com/comic"
 webname="webmota"
 global DBCLIENTNAME
 
 
+def openChrome():
+    try:
+        chrome = webdriver.Remote(
+            command_executor='http://platform_chrome:4444/wd/hub',
+            options=getOptions(True)
+        )
+        return chrome
+    except:
+        try:
+            chrome = webdriver.Remote(
+                command_executor='http://platform_chrome:4444/wd/hub',
+                options=getOptions(True)
+            )
+            return chrome
+        except:
+            return False
+
+
 def list_page(comicId):
-    chrome = webdriver.Remote(
-        # command_executor='http://192.168.50.122:4444/wd/hub',
-        command_executor='http://platform_chrome:4444/wd/hub',
-        desired_capabilities=DesiredCapabilities.CHROME
-    )
+    chrome =openChrome()
+
     chrome.get("%s/%s" % (URL, comicId))
     soup = BeautifulSoup(chrome.page_source, 'html.parser')
     # 合併list
@@ -49,11 +68,7 @@ def list_page(comicId):
 
 def getImgUrl(path):
     logger('be remote');
-    chrome = webdriver.Remote(
-        # command_executor='http://192.168.50.122:4444/wd/hub',
-        command_executor='http://platform_chrome:4444/wd/hub',
-        desired_capabilities=DesiredCapabilities.CHROME
-    )
+    chrome = openChrome()
 
     newPath="%s/%s" % (URLORIGEN, path)
 
@@ -83,6 +98,7 @@ def getImgUrl(path):
             isNext=False
 
     chrome.close()
+    chrome.quit()
     return mergedlist
 
 
@@ -126,7 +142,7 @@ def save_info(comic_name_id,title,tags,dec):
         return True
     try:
         ttag=",".join(str(x) for x in tags)
-        platform_value = Platform_info(comic_name_id=comic_name_id,title=title,long_info=dec,tags=ttag)
+        platform_value = Platform_info(comic_name_id=comic_name_id,title=title,long_info=dec,tags=ttag,content_type="png")
         session.add(platform_value)
         session.flush()
         session.commit()
@@ -159,7 +175,7 @@ def main_webmota(comicId,config):
             time.sleep(1)
             # 開始下載 影像
             logger("beform get images")
-            download(webname,comicId,st,URLORIGEN)
+            executor.submit(download, webname,comicId,st,URLORIGEN)
             logger("done get images")
             time.sleep(1)
             #紀錄到DB才行
