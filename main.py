@@ -1,4 +1,5 @@
 # save this as app.py
+from celery_task import *
 from flask import Flask,request,session
 from navel.search import Search
 from tool.response import sucess,fail
@@ -136,5 +137,18 @@ def getComicDownload():
     except Exception as e:
         return  fail("9999",e)
 
+
+
+
+@app.route("/mul/<arg1>/<arg2>")
+def mul_(arg1,arg2):
+    result = mul.delay(int(arg1),int(arg2))        # 调用异步方法并传参数
+    return result.id
+ 
+@app.route("/get_result/<result_id>")
+def result_(result_id):
+    result = get_result(result_id)
+    return str(result)
+
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",port="4000")
+    app.run()
