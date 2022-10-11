@@ -1,0 +1,26 @@
+version: "3.5"
+services:
+    python:
+      image: python3.9:latest
+      container_name: python
+      stdin_open: true
+      tty: true
+      ports:
+        - 5000:5000
+      volumes:
+        - .:/var/www
+      networks:
+        - netsserver
+    chrome:
+      container_name: platform_chrome
+      image: selenium/standalone-chrome:103.0
+      shm_size: '2gb'
+      restart: always
+      ports:
+        - 4444:4444
+        - 7900:7900
+      networks:
+        - netsserver
+networks:
+  netsserver:
+    driver: bridge

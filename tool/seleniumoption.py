@@ -1,6 +1,25 @@
 
 from selenium.webdriver.chrome.options import Options
 
+from selenium import webdriver
+
+def openChrome():
+    try:
+        chrome = webdriver.Remote(
+            command_executor='http://platform_chrome:4444/wd/hub',
+            options=getOptions(True)
+        )
+        return chrome
+    except:
+        try:
+            chrome = webdriver.Remote(
+                command_executor='http://platform_chrome:4444/wd/hub',
+                options=getOptions(True)
+            )
+            return chrome
+        except:
+            return False
+
 
 
 

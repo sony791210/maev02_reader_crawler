@@ -12,7 +12,7 @@ from sqlalchemy import func
 from db.dbname import Novel_crawler_zhou ,Novel ,Novel_info
 import random
 
-from navel.info.zhsxs import navelInfo
+from service.navel.info.zhsxs import navelInfo
 
 
 import logging

@@ -1,10 +1,9 @@
 import os
-from tool.seleniumoption import getOptions
+from tool.seleniumoption import openChrome
 from selenium import webdriver
 import time
 from bs4 import BeautifulSoup
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
 
 import concurrent.futures
 
@@ -27,23 +26,6 @@ URL="https://www.baozimh.com/comic"
 webname="webmota"
 global DBCLIENTNAME
 
-
-def openChrome():
-    try:
-        chrome = webdriver.Remote(
-            command_executor='http://platform_chrome:4444/wd/hub',
-            options=getOptions(True)
-        )
-        return chrome
-    except:
-        try:
-            chrome = webdriver.Remote(
-                command_executor='http://platform_chrome:4444/wd/hub',
-                options=getOptions(True)
-            )
-            return chrome
-        except:
-            return False
 
 
 def list_page(comicId):

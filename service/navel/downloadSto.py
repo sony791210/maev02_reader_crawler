@@ -16,7 +16,7 @@ from sqlalchemy.orm import Session
 
 from db.dbname import Novel ,Novel_info,Novel_crawler_sto
 
-from navel.info.sto import navelInfo
+from service.navel.info.sto import navelInfo
 
 import time
 import random

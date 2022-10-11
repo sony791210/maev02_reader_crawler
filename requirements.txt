@@ -41,7 +41,6 @@ pytz==2022.2.1
 redis==4.3.4
 requests==2.27.1
 requests-toolbelt==0.9.1
-requests2==2.16.0
 selenium==4.4.0
 six==1.16.0
 sniffio==1.2.0
