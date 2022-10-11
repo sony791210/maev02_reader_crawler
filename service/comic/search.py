@@ -1,7 +1,7 @@
 
 
 from tool.seleniumoption import openChrome
-
+from bs4 import BeautifulSoup
 
 
 class Search:
