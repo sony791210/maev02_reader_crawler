@@ -44,7 +44,7 @@ def getComicDownload():
     try:
         data = request.get_json()
         website =data["website"]
-        comicId =data["comicId"]
+        comicId =data["id"]
 
         if not(comicId):
             raise ValueError("no navelId")

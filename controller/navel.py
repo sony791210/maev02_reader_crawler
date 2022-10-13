@@ -47,7 +47,7 @@ def getNavelDownload():
     try:
         data = request.get_json()
         website =data["website"]
-        navelId =data["navelId"]
+        navelId =data["id"]
 
         if not(navelId):
             raise ValueError("no navelId")
