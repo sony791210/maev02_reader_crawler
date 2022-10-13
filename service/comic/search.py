@@ -32,5 +32,7 @@ class Search:
                     "img":i.find_all('img')[-1]["src"]
                 }
             )
+        chrome.close()
+        chrome.quit()
         return result
 
