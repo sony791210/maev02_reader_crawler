@@ -10,7 +10,7 @@ import base64
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey,TIMESTAMP,Text,func
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from db.dbname import Novel_info
+from db.dbname import Platform_info
 
 
 url = "http://tw.zhsxs.com"
@@ -57,12 +57,12 @@ class navelInfo:
         session = Session(engine)
         session.begin()
 
-        instance = session.query(Novel_info).filter_by(novel_name_id=novel_name_id).first()
+        instance = session.query(Platform_info).filter_by(novel_name_id=novel_name_id).first()
         if instance:
             session.close()
             return True
         try:
-            all_info = Novel_info(title=title,
+            all_info = Platform_info(title=title,
                                      novel_name_id=novel_name_id,
                                      data_update_time=datetime.datetime.now(),
                                      author=author,
@@ -87,8 +87,6 @@ class navelInfo:
         DBCLIENTNAME=dbname
         novel_name_id = int(novel_name_id)
         text, photoUrl = self.getIntroduction(novel_name_id)
-        print(text)
-        print(photoUrl)
         photoBase64 = self.photoUrl2Base64(photoUrl)
         title, author, cat, long_info, tags = self.splicInfo(text)
         self.gotoDataInfo(title, author, cat, long_info, tags, photoBase64, novel_name_id)

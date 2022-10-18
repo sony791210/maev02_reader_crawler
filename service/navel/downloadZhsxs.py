@@ -9,7 +9,7 @@ from flask import current_app,session
 from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, ForeignKey ,TIMESTAMP ,Text ,func
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-from db.dbname import Novel_crawler_zhou ,Novel ,Novel_info
+from db.dbname import Novel_crawler_zhou ,Novel ,Platform_info
 import random
 
 from service.navel.info.zhsxs import navelInfo
@@ -106,7 +106,7 @@ def check_crawbing(novel_name_id):
     session = Session(engine)
     session.begin()
 
-    isCrawbing = session.query(Novel_info.crawbing ).filter_by(novel_name_id=novel_name_id).first()
+    isCrawbing = session.query(Platform_info.crawbing ).filter_by(novel_name_id=novel_name_id).first()
     session.close()
 
     try:
@@ -124,7 +124,7 @@ def save_crawbing(isCrawbing,novel_name_id):
 
     try:
         # 儲存資訊
-        Novel_info_sql =session.query(Novel_info ).filter(Novel_info.novel_name_id==novel_name_id).update({"crawbing":isCrawbing})
+        session.query(Platform_info ).filter(Platform_info.novel_name_id==novel_name_id).update({"crawbing":isCrawbing})
 
         session.commit()
     except Exception as e:
@@ -138,6 +138,7 @@ def save_crawbing(isCrawbing,novel_name_id):
 
 def main_zhsxs(novel_id,config):
     global DBCLIENTNAME
+    # 將DB變數轉換進去
     DBCLIENTNAME = config["DBCLIENTNAME"]
 
     novel_id=int(novel_id)

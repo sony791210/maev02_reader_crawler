@@ -14,7 +14,7 @@ from sqlalchemy import create_engine, Table, Column, Integer, String, MetaData, 
 from sqlalchemy.orm import Session
 
 
-from db.dbname import Novel ,Novel_info,Novel_crawler_sto
+from db.dbname import Novel ,Platform_info,Novel_crawler_sto
 
 from service.navel.info.sto import navelInfo
 
@@ -98,7 +98,7 @@ def check_crawbing(novel_name_id):
     session = Session(engine)
     session.begin()
 
-    isCrawbing = session.query(Novel_info.crawbing ).filter_by(novel_name_id=novel_name_id).first()
+    isCrawbing = session.query(Platform_info.crawbing ).filter_by(novel_name_id=novel_name_id).first()
     session.close()
 
 
@@ -117,7 +117,7 @@ def save_crawbing(isCrawbing,novel_name_id):
 
     try:
         # 儲存資訊
-        Novel_info_sql =session.query(Novel_info ).filter(Novel_info.novel_name_id==novel_name_id).update({"crawbing":isCrawbing})
+        session.query(Platform_info ).filter(Platform_info.novel_name_id==novel_name_id).update({"crawbing":isCrawbing})
 
         session.commit()
     except Exception as e:

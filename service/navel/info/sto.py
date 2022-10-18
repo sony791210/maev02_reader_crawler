@@ -9,7 +9,7 @@ import base64
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-from db.dbname import Novel_info
+from db.dbname import Platform_info
 from flask import current_app
 
 import cloudscraper
@@ -38,12 +38,12 @@ class navelInfo:
         session = Session(engine)
         session.begin()
 
-        instance = session.query(Novel_info).filter_by(novel_name_id=novel_name_id).first()
+        instance = session.query(Platform_info).filter_by(novel_name_id=novel_name_id).first()
         if instance:
             session.close()
             return True
         try:
-            all_info = Novel_info(title=title,
+            all_info = Platform_info(title=title,
                                  novel_name_id=novel_name_id,
                                  data_update_time=datetime.datetime.now(),
                                  author=author,

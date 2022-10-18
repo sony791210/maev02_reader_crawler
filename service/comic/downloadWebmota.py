@@ -137,32 +137,35 @@ def save_info(comic_name_id,title,tags,dec):
 def main_webmota(comicId,config):
     logger("gogo")
     global DBCLIENTNAME
-    DBCLIENTNAME = config["DBCLIENTNAME"]
-    logger("before get list")
-    title,tags,dec,pages=list_page(comicId)
-    logger("done get list")
-    save_info(comicId,title,tags,dec)
-    logger("done save DB")
-    for st,page in enumerate(pages):
-        try:
-            logger("page")
-            logger(st)
-            if(os.path.isfile("public/webmota/%s/%03d" %(comicId,st))):
-                continue
-            logger("beform get url")
-            imgUrlList=getImgUrl(page['href'])
-            # 拿取漫畫頁面所有的圖片url，並存成落地黨
-            saveTxt(st, imgUrlList, comicId)
-            logger("done get url")
-            time.sleep(1)
-            # 開始下載 影像
-            logger("beform get images")
-            executor.submit(download, webname,comicId,st,URLORIGEN)
-            logger("done get images")
-            time.sleep(1)
-            #紀錄到DB才行
-            save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
-        except Exception as e:
-            logger(e)
+    try:
+        DBCLIENTNAME = config["DBCLIENTNAME"]
+        logger("before get list")
+        title,tags,dec,pages=list_page(comicId)
+        logger("done get list")
+        save_info(comicId,title,tags,dec)
+        logger("done save DB")
+        for st,page in enumerate(pages):
+            try:
+                logger("page")
+                logger(st)
+                if(os.path.isfile("public/webmota/%s/%03d" %(comicId,st))):
+                    continue
+                logger("beform get url")
+                imgUrlList=getImgUrl(page['href'])
+                # 拿取漫畫頁面所有的圖片url，並存成落地黨
+                saveTxt(st, imgUrlList, comicId)
+                logger("done get url")
+                time.sleep(1)
+                # 開始下載 影像
+                logger("beform get images")
+                executor.submit(download, webname,comicId,st,URLORIGEN)
+                logger("done get images")
+                time.sleep(1)
+                #紀錄到DB才行
+                save_comic_info(comicId, st, page.text, "public_download/comic/%s/%03d"%(comicId,st) )
+            except Exception as e:
+                logger(e)
+    except Exception as e:
+        logger(e)
 
 
