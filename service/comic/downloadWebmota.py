@@ -29,8 +29,9 @@ global DBCLIENTNAME
 
 
 def list_page(comicId):
+    logger("be open")
     chrome =openChrome()
-
+    logger("br get")
     chrome.get("%s/%s" % (URL, comicId))
     soup = BeautifulSoup(chrome.page_source, 'html.parser')
     # 合併list
@@ -166,6 +167,7 @@ def main_webmota(comicId,config):
             except Exception as e:
                 logger(e)
     except Exception as e:
+        logger("error")
         logger(e)
 
 
